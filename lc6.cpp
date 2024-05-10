@@ -1,5 +1,5 @@
-#include <bits/stdc++.h>
-
+#include <string>
+#include <iostream>
 using namespace std;
 
 class Solution {
@@ -23,3 +23,15 @@ public:
         return res;
     }
 };
+
+int main() {
+    string s;
+    int numRows;
+    Solution sol;
+
+    cin >> s >> numRows;
+
+    cout << sol.convert(s, numRows);
+
+    return 0;
+}
