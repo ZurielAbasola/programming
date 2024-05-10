@@ -1,0 +1,16 @@
+[
+	{
+		"correct_answers":
+		[
+			"apbqcr"
+		],
+		"test": "abc\npqr\n"
+	},
+	{
+		"correct_answers":
+		[
+			"apbq"
+		],
+		"test": "ab\npqrs\n"
+	}
+]
