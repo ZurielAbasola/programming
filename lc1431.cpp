@@ -11,9 +11,9 @@ public:
 		for (auto itr = candies.cbegin(); itr != candies.end(); ++itr) {
 			if (*itr + extraCandies >= max) {
 				result.push_back(true);
+			} else {
+				result.push_back(false);
 			}
-
-			result.push_back(false);
 		}
 
 		return result;
