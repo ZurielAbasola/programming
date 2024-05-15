@@ -12,9 +12,11 @@ public:
             if (nums[step] != 0) continue;
 
             for (int i = step; i < n - 1; ++i) {
-                int temp = nums[i];
-                nums[i] = nums[i + 1];
-                nums[i + 1] = temp;
+                if (nums[i + 1] != 0) {
+                    int temp = nums[i];
+                    nums[i] = nums[i + 1];
+                    nums[i + 1] = temp;
+                }
             }
         }
     }
