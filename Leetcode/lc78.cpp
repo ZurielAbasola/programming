@@ -1,3 +1,6 @@
+/*
+ * Recursive (backtracking solution)
+ */
 #include <vector>
 
 class Solution {
