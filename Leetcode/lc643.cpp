@@ -3,23 +3,26 @@
 class Solution {
 public:
     double findMaxAverage(vector<int> &nums, int k) {
-        l_p = 0;
-        r_p = k - 1;
-
-        int sum = 0
-        while (l_p < r_p) {
-            int sum += nums[i];
+        if (nums.size() == 1) {
+            return static_cast<double>(nums[0]);
         }
 
-        double avg = sum / k;
-        for (;r_p < nums.size(); ++r_p) {
-            sum = sum + nums[r_p] - nums[r_p - k];
-
-            if (sum / k > avg) {
-                avg = sum / k;
-            }
-
-            
+        int start = 0;
+        int end = k;
+        double avg = 0.0;
+        for (int i = 0; i < k; ++i) {
+            avg += static_cast<double>(nums[i]) / k;
         }
+
+        double max_avg = avg;
+        while (end < nums.size()) {
+            avg -= static_cast<double>(nums[start]) / k;
+            avg += static_cast<double>(nums[end]) / k;
+            max_avg = max(max_avg, avg);
+            start++;
+            end++;
+        }
+
+        return max_avg;
     }
 };
