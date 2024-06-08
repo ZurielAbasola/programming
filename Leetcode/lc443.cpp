@@ -3,7 +3,6 @@
 #include <unordered_map>
 
 using namespace std;
-// TODO: Leetcode solution review
 class Solution {
 public:
   int compress(vector<char>& chars) {
