@@ -1,7 +1,7 @@
-#include <iostream>
 #include <vector>
-using namespace std;
 
+using namespace std;
+// TODO: Solution review for leetcode problem 1431
 class Solution {
 public:
 	vector<bool> kidsWithCandies (vector<int>& candies, int extraCandies) {

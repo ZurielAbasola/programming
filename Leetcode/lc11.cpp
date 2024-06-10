@@ -1,7 +1,7 @@
-#include <iostream>
 #include <vector>
-#include <algorithm>
 
+using namespace std;
+// TODO: solution review for problem 11
 class Solution {
 public:
     int maxArea(vector<int>& height) {
