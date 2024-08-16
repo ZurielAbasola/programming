@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <unordered_map>
 
 using namespace std;
 
@@ -16,6 +17,8 @@ struct TreeNode {
 class Solution {
 public:
   bool leafSimilar(TreeNode* root1, TreeNode* root2) {
+    unordered_map<int, int> val_map;
+
     
   }
 };
