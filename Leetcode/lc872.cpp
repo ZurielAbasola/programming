@@ -12,6 +12,5 @@ struct TreeNode {
 class Solution {
 public:
   bool leafSimilar(TreeNode* root1, TreeNode* root2) {
-
   }
 };
